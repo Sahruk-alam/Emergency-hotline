@@ -23,14 +23,13 @@
         <div class="flex gap-3 justify-center items-center"> 
                <div >
                    <button class=" flex bg-[#41ff6b1a] justify-center gap-2 p-2  rounded-[50px] w-[123px] ">
-                     <span class="font-bold">0</span> 
-                    <img class="max-w-[25px]"
-                     src="./assets/heart.png" alt="">
+                     <span id="heart" class="font-bold">0</span> 
+                    <img  class="max-w-[25px]"src="./assets/heart.png" alt="">
                     </button>
-               </div>
+               </div> 
                <div >
                    <button class=" flex bg-[#41ff6b1a] justify-center gap-2 p-2 rounded-[50px] w-[123px] "> 
-                    <span class="font-bold">100</span> 
+                    <span id="coin-count" class="font-bold">100</span> 
                     <img class="max-w-[25px]"
                      src="./assets/coin.png" alt="">
                     </button>
@@ -63,7 +62,7 @@
                     <div class=" p-2 rounded-2xl bg-[#ffe3e2] h-14 w-14 flex justify-center items-center">
                         <img class="h-8 w-8" src="./assets/emergency.png" alt="">
                     </div>
-                    <i class="fa-regular fa-heart "></i>
+                    <i id="national-heart" class="fa-regular fa-heart"></i>
                 </div>
                 <div>
                     <h2 class="font-bold text-[23px]">National Emergency Number</h2>
@@ -76,7 +75,7 @@
                         <i class="fa-regular fa-copy"></i>
                         <button class="text-[16px] font-[400] "> Copy</button>
                     </div>
-                    <div class=" bg-[#00A63E] py-3 gap-2 w-[170px] rounded-xl justify-center items-center flex">
+                    <div id="national-call" class=" bg-[#00A63E] py-3 gap-2 w-[170px] rounded-xl justify-center items-center flex">
                        <i class="fa-solid fa-phone text-white"></i>
                         <button class="text-[16px] font-[400] text-white "> Call</button>
                     </div>
@@ -87,9 +86,9 @@
             <div class="shadow-lg p-8 w-full bg-white rounded-2xl">
                 <div class="flex justify-between items-center">
                     <div class=" p-2 rounded-2xl bg-[#DFEFFF] h-14 w-14 flex justify-center items-center">
-                        <img class="h-8 w-8" src="./assets/police.png" alt="">
+                        <img  class="h-8 w-8" src="./assets/police.png" alt="">
                     </div>
-                    <i class="fa-regular fa-heart "></i>
+                    <i id="police-heart" class="fa-regular fa-heart "></i>
                 </div>
                 <div>
                     <h2 class="font-bold text-[23px]">Police Helpline Number</h2>
@@ -103,7 +102,7 @@
                         <i class="fa-regular fa-copy"></i>
                         <button class="text-[16px] font-[400] "> Copy</button>
                     </div>
-                    <div class=" bg-[#00A63E] py-3 gap-2 w-[170px] rounded-xl justify-center items-center flex">
+                    <div id="police-call" class=" bg-[#00A63E] py-3 gap-2 w-[170px] rounded-xl justify-center items-center flex">
                        <i class="fa-solid fa-phone text-white"></i>
                         <button class="text-[16px] font-[400] text-white "> Call</button>
                     </div>
@@ -116,7 +115,7 @@
                     <div class=" p-2 rounded-2xl bg-[#ffe3e2] h-14 w-14 flex justify-center items-center">
                         <img class="h-8 w-8" src="./assets/fire-service.png" alt="">
                     </div>
-                    <i class="fa-regular fa-heart "></i>
+                    <i id="fire-heart" class="fa-regular fa-heart "></i>
                 </div>
                 <div>
                     <h2 class="font-bold text-[23px]">Fire Service Numberr</h2>
@@ -143,7 +142,7 @@
                     <div class=" p-2 rounded-2xl bg-[#ffe3e2] h-14 w-14 flex justify-center items-center">
                         <img class="h-8 w-8" src="./assets/ambulance.png" alt="">
                     </div>
-                    <i class="fa-regular fa-heart "></i>
+                    <i id="ambulance-heart" class="fa-regular fa-heart "></i>
                 </div>
                 <div>
                     <h2 class="font-bold text-[23px]">Ambulance Service</h2>
@@ -170,7 +169,7 @@
                     <div class=" p-2 rounded-2xl bg-[#ffe3e2] h-14 w-14 flex justify-center items-center">
                         <img class="h-8 w-8" src="./assets/emergency.png" alt="">
                     </div>
-                    <i class="fa-regular fa-heart "></i>
+                    <i id="women-child-heart" class="fa-regular fa-heart "></i>
                 </div>
                 <div>
                     <h2 class="font-bold text-[23px]">Women & Child Helpline</h2>
@@ -197,7 +196,7 @@
                     <div class=" p-2 rounded-2xl bg-[#ffe3e2] h-14 w-14 flex justify-center items-center">
                         <img class="h-8 w-8" src="./assets/emergency.png" alt="">
                     </div>
-                    <i class="fa-regular fa-heart "></i>
+                    <i id="anti-corruption-heart" class="fa-regular fa-heart "></i>
                 </div>
                 <div>
                     <h2 class="font-bold text-[23px]">Anti-Corruption Helpline</h2>
@@ -225,7 +224,7 @@
                     <div class=" p-2 rounded-2xl bg-[#ffe3e2] h-14 w-14 flex justify-center items-center">
                         <img class="h-8 w-8" src="./assets/emergency.png" alt="">
                     </div>
-                    <i class="fa-regular fa-heart "></i>
+                    <i id="electricity-heart" class="fa-regular fa-heart "></i>
                 </div>
                 <div>
                     <h2 class="font-bold text-[23px]">Electricity Helpline</h2>
@@ -250,9 +249,9 @@
             <div class="shadow-lg p-8 w-full bg-white rounded-2xl">
                 <div class="flex justify-between items-center">
                     <div class=" p-2 rounded-2xl bg-[#ffe3e2] h-14 w-14 flex justify-center items-center">
-                        <img class="h-8 w-8" src="./assets/emergency.png" alt="">
+                        <img class="h-8 w-8" src="./assets/brac.png" alt="">
                     </div>
-                    <i class="fa-regular fa-heart "></i>
+                    <i id="brac-heart" class="fa-regular fa-heart "></i>
                 </div>
                 <div>
                     <h2 class="font-bold text-[23px]">Brac Helpline</h2>
@@ -277,9 +276,9 @@
             <div class="shadow-lg p-8 w-full bg-white rounded-2xl">
                 <div class="flex justify-between items-center">
                     <div class=" p-2 rounded-2xl bg-[#ffe3e2] h-14 w-14 flex justify-center items-center">
-                        <img class="h-8 w-8" src="./assets/emergency.png" alt="">
+                        <img class="h-8 w-8" src="./assets/Bangladesh-Railway.png" alt="">
                     </div>
-                    <i class="fa-regular fa-heart "></i>
+                    <i id="bangladesh-railway-heart" class="fa-regular fa-heart "></i>
                 </div>
                 <div>
                     <h2 class="font-bold text-[23px]">Bangladesh Railway Helpline</h2>
@@ -312,20 +311,21 @@
                 </div>
                 <h2 class="text-[21px] font-[500]">Call History</h2>
             </div>
-            <button class="bg-[#00A63E] text-[18px] font-[600] py-3 px-8 rounded-[50px] text-white">Clear</button>
+            <div id="clear-button">
+                <button class="bg-[#00A63E] text-[18px] font-[600] py-3
+             px-8 rounded-[50px] text-white">Clear</button>
+            </div>
           </div>
 <!-- toggle part  -->
-          <div class=" mt-5 p-3 rounded-lg flex justify-between items-center bg-[#fafafa]">
-            <div class="">
-                <h2 class="text-[18px] font-[600]">Fire Service Number</h2>
-                <p class="font-[400]">999</p>
-            </div>
-            <p>new date</p>
-          </div>
+  <div id="call-history">
+    
+ </div>
+          
+
          </div>
 
         </div>
     </main>
-
+<script src="./script.js"></script>
 </body>
 </html>
