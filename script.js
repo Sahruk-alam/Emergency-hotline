@@ -263,37 +263,6 @@ function changeColor(id){
 
 }
 
-   // copy-button color change
-// const copyButtons = document.getElementsByClassName('class-copy');
-// for (const button of copyButtons) {
-//     button.addEventListener('click', function() {
-//         // Remove gray background from the clicked button
-//         button.classList.remove('bg-[#8A8280]');
-//         button.classList.add('border-[#d4d6d5]');
-
-//         // Add background and text color to 
-//         document.getElementById('national-copy')
-//             .classList.add('bg-[#8A8280]', 'text-white');
-//    }) 
-// }
-// const copyButtons = document.getElementsByClassName('class-copy');
-
-// for (const button of copyButtons) {
-//     button.addEventListener('mouseout', function() {
-//         // Reset all buttons to original state
-//         for (const btn of copyButtons) {
-//             btn.classList.remove('bg-[#8A8280]', 'text-white');
-//             btn.classList.add('border-[#d4d6d5]');
-//         }
-
-//         // Apply active style to the clicked button
-//         button.classList.remove('border-[#d4d6d5]');
-//         button.classList.add('bg-[#8A8280]', 'text-white');
-//     });
-// }
-
-
-
 //  clear button 
 document.getElementById('clear-button').addEventListener('click',function(){
    document.getElementById('call-history').innerHTML = '';
