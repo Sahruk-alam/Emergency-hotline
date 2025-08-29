@@ -68,11 +68,11 @@ document.getElementById('police-heart').addEventListener('click',
      function alertCoin(value){
           const coinCount = document.getElementById('coin-count').innerText;
         document.getElementById('coin-count').innerText = parseInt(coinCount) - 20;
-        if(coinCount > 0){
+        if(coinCount >= 20){
          alert("📞"+value);
           return;
         }
-        if(coinCount <= 0) {
+        if(coinCount < 20) {
 
             alert("❌ You don't have enough coins.Need at least 20 coins to make call");
             document.getElementById('coin-count').innerText = 0;
@@ -121,7 +121,7 @@ document.getElementById('police-heart').addEventListener('click',
      })
      // ambulance
      document.getElementById('ambulance-call').addEventListener('click',function(){
-          const comments="Calling Ambulance Service Number 999..."
+          const comments="Calling Ambulance Service Number 1994-999999..."
           alertCoin(comments);
                const callData = {
                     service: "Ambulance Service Number",
@@ -133,10 +133,10 @@ document.getElementById('police-heart').addEventListener('click',
      })
      // women and child
      document.getElementById('women-child-call').addEventListener('click',function(){
-          const comments="Calling Women and Child Helpline Number 999..."
+          const comments="Calling Women and Child Helpline Number 109..."
           alertCoin(comments);
                const callData = {
-                    service: "Women and Child Helpline Number",
+                    service: "Women and Child Helpline",
                     number: "109",
                     time: new Date().toLocaleTimeString()
                 };
@@ -145,10 +145,10 @@ document.getElementById('police-heart').addEventListener('click',
      })
      // anti-corruption
      document.getElementById('anti-corruption-call').addEventListener('click',function(){
-          const comments="Calling Anti-Corruption Commission Number 999..."
+          const comments="Calling Anti-Corruption Commission Number 106..."
           alertCoin(comments);
                const callData = {
-                    service: "Anti-Corruption Commission Number",
+                    service: "Anti-Corruption Helpline",
                     number: "106",
                     time: new Date().toLocaleTimeString()
                 };
@@ -157,7 +157,7 @@ document.getElementById('police-heart').addEventListener('click',
      })
      // electricity
      document.getElementById('electricity-call').addEventListener('click',function(){
-          const comments="Calling Electricity Helpline Number 999..."
+          const comments="Calling Electricity Helpline Number 16216..."
           alertCoin(comments);
                const callData = {
                     service: "Electricity Helpline Number",
@@ -169,7 +169,7 @@ document.getElementById('police-heart').addEventListener('click',
      })
      // Brac
      document.getElementById('brac-call').addEventListener('click',function(){
-          const comments="Calling Brac Helpline Number 999..."
+          const comments="Calling Brac Helpline Number 16445..."
           alertCoin(comments);
                const callData = {
                     service: "Brac Helpline Number",
@@ -181,10 +181,10 @@ document.getElementById('police-heart').addEventListener('click',
      })
      // bangladesh railway
      document.getElementById('bangladesh-railway-call').addEventListener('click',function(){
-          const comments="Calling Bangladesh Railway Helpline Number 999..."
+          const comments="Calling Bangladesh Railway Helpline Number 163..."
           alertCoin(comments);
                const callData = {
-                    service: "Bangladesh Railway Helpline Number",
+                    service: "Bangladesh Railway Helpline",
                     number: "163",
                     time: new Date().toLocaleTimeString()
                 };
@@ -193,6 +193,7 @@ document.getElementById('police-heart').addEventListener('click',
      })
 
      //  count copy
+
      // national
 document.getElementById('national-copy').addEventListener('click',function(){
    const countCopy = document.getElementById('count-copy');
@@ -207,23 +208,89 @@ document.getElementById('national-copy').addEventListener('click',function(){
       navigator.clipboard.writeText('999');
       alert('Number copied to clipboard: 999');
    });
-   // copy button color change
+   // fire
+   document.getElementById('fire-copy').addEventListener('click',function(){
+      const countCopy = document.getElementById('count-copy');
+      countCopy.innerText = parseInt(countCopy.innerText) + 1;
+      navigator.clipboard.writeText('999');
+      alert('Number copied to clipboard: 999');
+   });
+   // ambulance
+   document.getElementById('ambulance-copy').addEventListener('click',function(){
+      const countCopy = document.getElementById('count-copy');
+      countCopy.innerText = parseInt(countCopy.innerText) + 1;
+      navigator.clipboard.writeText('1994-999999');
+      alert('Number copied to clipboard: 1994-999999');
+   });
+   // women and child
+   document.getElementById('women-child-copy').addEventListener('click',function(){
+      const countCopy = document.getElementById('count-copy');
+      countCopy.innerText = parseInt(countCopy.innerText) + 1;
+      navigator.clipboard.writeText('109');
+      alert('Number copied to clipboard: 109');
+   });
+   //    anti-corruption
+   document.getElementById('anti-corruption-copy').addEventListener('click',function(){
+      const countCopy = document.getElementById('count-copy');
+      countCopy.innerText = parseInt(countCopy.innerText) + 1;
+      navigator.clipboard.writeText('106');
+      alert('Number copied to clipboard: 106');
+   });
+   //    electricity
+   document.getElementById('electricity-copy').addEventListener('click',function(){
+      const countCopy = document.getElementById('count-copy');
+      countCopy.innerText = parseInt(countCopy.innerText) + 1;
+      navigator.clipboard.writeText('16216');
+      alert('Number copied to clipboard: 16216');
+   });
+   // brac
+   document.getElementById('brac-copy').addEventListener('click',function(){
+      const countCopy = document.getElementById('count-copy');
+      countCopy.innerText = parseInt(countCopy.innerText) + 1;
+      navigator.clipboard.writeText('16445');
+      alert('Number copied to clipboard: 16445');
+   });
 
+   //    bangladesh railway
+   document.getElementById('bangladesh-railway-copy').addEventListener('click',function(){
+      const countCopy = document.getElementById('count-copy');
+      countCopy.innerText = parseInt(countCopy.innerText) + 1;
+      navigator.clipboard.writeText('163');
+      alert('Number copied to clipboard: 163');
+   });
+// copy-button color change function
+function changeColor(id){
 
-const copyButtons = document.getElementsByClassName('class-copy');
-for (const button of copyButtons) {
-    button.addEventListener('click', function() {
-        // Remove gray background from the clicked button
-        button.classList.remove('bg-[#8A8280]');
-        button.classList.add('border-[#d4d6d5]');
-
-        // Add background and text color to #police-copy
-        document.getElementById('police-copy')
-            .classList.add('bg-[#8A8280]', 'text-white');
-    });
 }
 
+   // copy-button color change
+// const copyButtons = document.getElementsByClassName('class-copy');
+// for (const button of copyButtons) {
+//     button.addEventListener('click', function() {
+//         // Remove gray background from the clicked button
+//         button.classList.remove('bg-[#8A8280]');
+//         button.classList.add('border-[#d4d6d5]');
 
+//         // Add background and text color to 
+//         document.getElementById('national-copy')
+//             .classList.add('bg-[#8A8280]', 'text-white');
+//    }) 
+// }
+// const copyButtons = document.getElementsByClassName('class-copy');
+
+// for (const button of copyButtons) {
+//     button.addEventListener('mouseout', function() {
+//         // Reset all buttons to original state
+//         for (const btn of copyButtons) {
+//             btn.classList.remove('bg-[#8A8280]', 'text-white');
+//             btn.classList.add('border-[#d4d6d5]');
+//         }
+
+//         // Apply active style to the clicked button
+//         button.classList.remove('border-[#d4d6d5]');
+//         button.classList.add('bg-[#8A8280]', 'text-white');
+//     });
+// }
 
 
 
